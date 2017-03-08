@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>-->
+<view class="main">
+  <view class="stu">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="showmybill"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="list">
+    <view class="list_bill" bindtap="bindViewTap" wx:for="{{product}}" data-ind="{{index}}">
+      <view class="list_bill_to">{{item.to}}</view>
+      <view class="list_bill_time">
+      <!--<text class="list_bill_time">-->
+        <view class="time_list">出发{{item.start}}</view>
+        <view class="time_list">返回{{item.end}}</view>
+      <!--</text>-->
+      </view>
+      <view class="list_bill_price">￥{{item.price}}</view>
+    </view>
+    
+  </view>
+  <view class="icon_bill" bindtap="showmybill">+</view>
+</view>
+<view class="footer">©Designed by OOer</view>

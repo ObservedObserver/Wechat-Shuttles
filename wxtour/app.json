@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/bill/bill",
+    "pages/mybill/mybill"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#512da8",
+    "navigationBarTitleText": "OOer",
+    "navigationBarTextStyle":"#fff"
+  }
+}

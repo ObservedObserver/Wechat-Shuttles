@@ -1,0 +1,8 @@
+/* pages/mybill/mybill.wxss */
+@import "../../lib/global.wxss";
+@import "../../lib/ticket.wxss";
+.pay{
+  width:80%;
+  margin:auto;
+  margin-top:60rpx;
+}

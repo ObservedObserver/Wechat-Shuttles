@@ -1,0 +1,59 @@
+@import "../../lib/global.wxss";
+@import "../../lib/ticket.wxss";
+.bill{
+    width:730rpx;
+    height:400rpx;
+    margin:auto;
+    background-color:#ffffff;
+}
+.list{
+    width:400rpx;
+    height:60rpx;
+    margin:auto;
+    margin-top:10rpx;
+    line-height:60rpx;
+}
+.table{
+    width:750rpx;
+    height:500rpx;
+    background-color:#512da8;
+    box-shadow: 0rpx 4rpx 5rpx 5rpx rgba(0,0,0,0.24);
+    overflow: hidden;
+}
+
+.input_info{
+    width:500rpx;
+    height:80rpx;
+    margin:auto;
+    margin-top:20rpx;
+    border-bottom: 2rpx solid rgba(255,255,255,0.6);
+    color:#fff;
+    font-family: Helvetica, Tahoma, Arial,"微软雅黑";
+    font-size:60rpx;
+}
+.input_box{
+    width:100%;
+    height:100%;
+    color:#fff;
+    font-family: Helvetica, Tahoma, Arial,"微软雅黑";
+    font-size:60rpx;
+}
+.input_title{
+    width:500rpx;
+    height:32rpx;
+    margin:auto;
+    margin-top:100rpx;
+    color:#fff;
+    font-family: Helvetica, Tahoma, Arial,"微软雅黑";
+    font-size:36rpx;
+}
+.tip{
+    color:rgba(255,255,255,0.4);
+    font-family: "微软雅黑";
+    font-size:30rpx;
+}
+.pay{
+  width:80%;
+  margin:auto;
+  margin-top:60rpx;
+}

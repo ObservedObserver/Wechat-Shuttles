@@ -1,0 +1,23 @@
+.main{
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:30rpx;
+  font-family: "微软雅黑";
+  /*background-color:#dadada;*/
+  overflow: auto;
+}
+.footer{
+  width:750rpx;
+  height:30rpx;
+  text-align: center;
+  line-height:30rpx;
+  font-size:24rpx;
+   font-family: Helvetica, Tahoma, Arial;
+  position: fixed;
+  left:0rpx;
+  bottom:0rpx;
+  background-color:#512da8;
+  color:#fff;
+}

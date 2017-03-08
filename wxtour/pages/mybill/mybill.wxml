@@ -1,0 +1,31 @@
+<!--pages/mybill/mybill.wxml-->
+<!--<text>pages/mybill/mybill.wxml</text>-->
+<view class="main">
+  <view wx:for="{{mybill}}">
+    <view class="ticket">
+      <view class="ticket_banner">
+        <view class="banner_title">{{item.to}}</view>
+      </view>
+      <view class="ticket_main">
+        <view class="ticket_main_left">
+          <view class="ticket_main_header">{{item.from}}{{item.to}}往返车票</view>
+          <view class="ticket_main_p">本票为往返车票，请按时在上车点集合，以免当误了您的行程，祝您旅途愉快!</view>
+        </view>
+        <view class="ticket_main_right">
+          <view class="ticket_pic">{{item.to}}</view>
+        </view>
+      </view>
+      <view class="info_list">
+        <view class="info_block">出 发: {{item.start}}</view>
+        <view class="info_block">返 回: {{item.end}}</view>
+        <view class="info_block">票 价: {{item.price}}</view>
+        <view class="info_block">{{item.realname}}</view>
+      </view>
+      <view class="info_footer">
+        <view class="footer_block">Date: {{item.date}}</view>
+        <view class="footer_block">Did: {{item.did}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="footer">©Designed by OOer</view>

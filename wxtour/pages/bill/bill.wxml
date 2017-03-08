@@ -1,0 +1,42 @@
+<view class="main">
+    <view class="table">
+        <view class="input_title">基本信息</view>
+        <view class="input_info">
+            <input class="input_box" type="text" placeholder="真实姓名" bindinput="inputName" placeholder-class="tip"></input>
+        </view>
+        <view class="input_info" style="border-bottom-color:{{icolor[1]}}">
+             <input class="input_box" type="text" placeholder="学号" bindinput="inputSid" placeholder-class="tip"></input>
+        </view>
+        <view class="input_info" style="border-bottom-color:{{icolor[2]}}">
+            <input class="input_box" type="text" placeholder="联系方式" bindinput="inputPhone" placeholder-class="tip"></input>
+        </view>
+    </view>
+    <view class="ticket">
+      <view class="ticket_banner">
+        <view class="banner_title">{{ticket.to}}</view>
+      </view>
+      <view class="ticket_main">
+        <view class="ticket_main_left">
+          <view class="ticket_main_header">{{ticket.from}}{{ticket.to}}往返车票</view>
+          <view class="ticket_main_p">本票为往返车票，请按时在上车点集合，以免当误了您的行程，祝您旅途愉快!</view>
+        </view>
+        <view class="ticket_main_right">
+          <view class="ticket_pic">{{ticket.to}}</view>
+        </view>
+      </view>
+      <view class="info_list">
+        <view class="info_block">出 发: {{ticket.start}}</view>
+        <view class="info_block">返 回: {{ticket.end}}</view>
+        <view class="info_block">票 价: {{ticket.price}}</view>
+        <view class="info_block">{{ticket.sid}}</view>
+      </view>
+      <view class="info_footer">
+        <view class="footer_block">Date: {{ticket.date}}</view>
+        <view class="footer_block">Did: {{ticket.did}}</view>
+      </view>
+    </view>
+    <button type="primary" class="pay" loading="{{loading}}" plain="{{plain}}"
+            disabled="{{disabled}}" bindtap="primary"> 确认
+    </button>
+</view>
+<view class="footer">©Designed by OOer</view>
