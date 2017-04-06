@@ -6,7 +6,9 @@
 **wxtour** 为前端部分，由微信开发客户端上传。<br>
 其余部分上传至服务器**(https)**即可。<br>
 > 需要修改 /wxtour/config/config.php中的参数，即数据库信息<br>
-> 数据库文件 /wxtour/sql/wx_tour.sql
+> 数据库文件 /wxtour/sql/wx_tour.sql<br>
+
+
 初步测试在CentOS+Nginx+Mysql+PHP(**腾讯云小程序解决方案**)的环境下成功<br>
 
 ## Demo
